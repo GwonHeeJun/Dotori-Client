@@ -22,9 +22,10 @@
 
 ## COMMIT 종류
 
-- DELETE : 기능을 삭제하는 경우
+- CREATE : 파일 생성
 - ADD : 새기능을 추가하는 경우 
 - UPDATE : 로직 등의 코드 변경
+- DELETE : 기능을 삭제하는 경우
 - FIX : 이슈 해결
 - ETC : 기타 등등
 - INIT : 프로젝트 초기화
