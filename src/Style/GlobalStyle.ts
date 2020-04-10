@@ -1,4 +1,4 @@
-import { createGlobalStyle, GlobalStyleComponent, DefaultTheme } from 'styled-components';
+import styled, { createGlobalStyle, GlobalStyleComponent, DefaultTheme } from 'styled-components';
 
 export const GlobalStyle: GlobalStyleComponent<{}, DefaultTheme> = createGlobalStyle`
   html, body, div, span, applet, object, iframe,
@@ -32,3 +32,13 @@ export const GlobalStyle: GlobalStyleComponent<{}, DefaultTheme> = createGlobalS
 
   * { font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif'; }
 `;
+
+export const Positioner = styled.div`
+  display: flex;
+`
+
+export const ContentWrapper = styled.div`
+  display: inline-block;
+  width: calc(100% - 15rem);
+  height: 100vh;
+`
