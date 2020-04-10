@@ -3,7 +3,7 @@ import { GlobalStyle, Positioner, ContentWrapper } from './Style/GlobalStyle';
 import Router from './Router';
 import { BrowserRouter } from 'react-router-dom';
 
-const App: React.FC = ( props ) => {
+const App: React.FC = ( ) => {
   return (
     <BrowserRouter>
       <GlobalStyle />
