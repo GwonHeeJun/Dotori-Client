@@ -40,5 +40,6 @@ export const Positioner = styled.div`
 export const ContentWrapper = styled.div`
   display: inline-block;
   width: calc(100% - 15rem);
+  background-color: #EDEDED;
   height: 100vh;
 `

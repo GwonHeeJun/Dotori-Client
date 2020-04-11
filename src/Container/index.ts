@@ -1,2 +1,3 @@
+import SidebarContainer from './SidebarContainer/SidebarContainer';
 
-export { };
+export { SidebarContainer };
