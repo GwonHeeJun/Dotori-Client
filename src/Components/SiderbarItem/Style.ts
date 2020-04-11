@@ -11,7 +11,7 @@ export const LinkWrapper = styled(Link)<StyleProps>`
     width: 100%;
     align-items: center;
     color: ${props => props.active ? '#0F4C81' : '#BBBBBE'};
-    margin-bottom: 35px;
+    margin-bottom: 18%;
 
     svg {
         width: 25px;
