@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { IilustNotebook } from '../../../Assets/Svg';
 import * as G from '../BannerStyle';
 import * as S from './Style';
+import { ManufactureDate } from '../../../Utils/ManufactureDate';
 
 const NotebookBanner: React.FC = () => {
     const [isRent, setIsRent] = useState(true)
@@ -9,7 +10,7 @@ const NotebookBanner: React.FC = () => {
     return (
         <S.Postioner rent={isRent}>
             <G.TextWrapper>
-                <span>12월 21일 토요일</span>
+                <span>{ManufactureDate('M')}월 {ManufactureDate('D')}일 {ManufactureDate('W')}요일</span>
                 {isRent ?
                     <S.RentWrapper>
                         <h2>Lab 1실, 2번 좌석에 노트북 대여를 신청했어요.</h2>
