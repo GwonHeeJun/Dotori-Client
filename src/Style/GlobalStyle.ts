@@ -31,6 +31,10 @@ export const GlobalStyle: GlobalStyleComponent<{}, DefaultTheme> = createGlobalS
   }
 
   * { font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif'; }
+
+  html {
+    overflow: hidden;
+  }
 `;
 
 export const Positioner = styled.div`
