@@ -7,6 +7,8 @@ import School from './School';
 import Setting from './Setting';
 import Slack from './Slack';
 import Song from './Song';
+import IilustNotebook from './IiustNotebook';
+import IilustBeta from './IilustBeta';
 
 export {
     Home,
@@ -17,5 +19,7 @@ export {
     School,
     Setting,
     Slack,
-    Song
+    Song,
+    IilustNotebook,
+    IilustBeta
 }
