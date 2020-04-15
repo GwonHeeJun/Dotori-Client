@@ -1,53 +1,11 @@
 import styled from 'styled-components';
 
-export const Postioner = styled.div`
-    display: flex;
-    width: calc(100% - 2.381% * 2);
-    height: calc(100% - 4% * 2);
-    align-items: center;
-    justify-content: center;
-    padding: 2.679% 2.381%;
-`
-
-export const Wrapper = styled.div`
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-`
-
-export const Title = styled.div`
-    width: 100%;
-    height: 74px;
-    font-size: 50px;
-    font-weight: bold;
-
-    strong {
-        font-size: 18px;
-        margin-left: 14.5px;
-        font-weight: 500;
-    }
-`
-
-export const Banner = styled.div`
-    height: 191px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    margin-bottom: 18.8px;
-`
-
-export const Content = styled.div`
-    display: flex;
-    width: 100%;
-    height: 100%;
-`
-
 export const UserProfile = styled.div`
     display: flex;
     height: 100%;
     min-width: 403px;
-    background-color: red;
+    background-color: #fff;
+    border-radius: 20px;
 `
 
 export const BoardWrapper = styled.div`
