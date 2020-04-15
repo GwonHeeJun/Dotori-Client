@@ -9,6 +9,8 @@ import Slack from './Slack';
 import Song from './Song';
 import IilustNotebook from './IiustNotebook';
 import IilustBeta from './IilustBeta';
+import Logout from './Logout';
+import User from './User';
 
 export {
     Home,
@@ -21,5 +23,7 @@ export {
     Slack,
     Song,
     IilustNotebook,
-    IilustBeta
+    IilustBeta,
+    Logout,
+    User
 }
