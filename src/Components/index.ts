@@ -4,6 +4,9 @@ import SidebarItem from './SiderbarItem/SidebarItem';
 import BetaBanner from './Banners/BetaBanner/BetaBanner';
 import NotebookBanner from './Banners/NotebookBanner/NotebookBanner';
 import UserProfile from './UserProfile/UserProfile';
+import EventList from './EventList/EventList';
+import LaptopEvent from './EventItem/LaptopEvent/LaptopEvent';
+import SongEvent from './EventItem/SongEvent/SongEvent';
 
 export {
     Sidebar,
@@ -11,5 +14,8 @@ export {
     SidebarItem,
     BetaBanner,
     NotebookBanner,
-    UserProfile
+    UserProfile,
+    EventList,
+    LaptopEvent,
+    SongEvent
 }; 

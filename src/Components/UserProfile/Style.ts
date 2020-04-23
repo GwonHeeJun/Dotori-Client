@@ -62,7 +62,7 @@ export const UserWrapper = styled.div`
             display: flex;
             align-items: center;
             justify-content: center;
-        margin-bottom: 10px;
+            margin-bottom: 10px;
             
             .name {
                 font-size: 20px;
@@ -106,10 +106,7 @@ export const PointWrapper = styled.div`
     align-items: center;
     justify-content: space-between;
     margin-bottom: 30px;
-
-    @media (max-height: 900px) {
-        margin-top: 15px;
-    }
+    margin-top: 15px;
 
     span {
         margin: 0px 10px;
@@ -149,28 +146,6 @@ export const Footer = styled.div`
 `
 
 export const Label = styled.span`
-    font-size: 20px;
-    font-weight: bold;
-`
-
-export const FooterContent = styled.div`
-    margin-top: 11px;
-    width: 100%;
-    height: 80%;
-    display: grid;
-    align-items: center;
-    row-gap: 20px;
-    grid-template-rows: repeat(2, 50%);
-`
-
-export const SampleContent = styled.div`
-    width: 100%;
-    height: 90%;
-    background-color: #ededed;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     font-size: 20px;
     font-weight: bold;
 `

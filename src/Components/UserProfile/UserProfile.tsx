@@ -1,6 +1,7 @@
 import React from 'react';
 import * as S from './Style';
 import { Logout, Point, User } from '../../Assets/Svg';
+import { EventList } from '..';
 
 type UserProfile = {
     name: string,
@@ -11,6 +12,19 @@ type UserProfile = {
 interface ProfileProps {
     logoutFunc: () => void,
     userProfile: UserProfile
+}
+
+const SampleData = {
+    laptop: {
+        laptopRoom: "LAB 4실",
+        laptopSeat: "12"
+    },
+    song: {
+        songAuthor: "아이유",
+        songName: "Blueming",
+        arriTime: "7:30 ~ 7:35",
+        thumbnailKey: "D1PvIWdJ8xo"
+    }
 }
 
 const UserProfile: React.FC<ProfileProps> = ({ logoutFunc, userProfile }) => {
@@ -41,14 +55,7 @@ const UserProfile: React.FC<ProfileProps> = ({ logoutFunc, userProfile }) => {
             </S.Content>
             <S.Footer>
                 <S.Label>나의 이벤트</S.Label>
-                <S.FooterContent>
-                    <S.SampleContent>
-                        Test Area
-                    </S.SampleContent>
-                    <S.SampleContent>
-                        Test Area
-                    </S.SampleContent>
-                </S.FooterContent>
+                <EventList eventObject={SampleData}/>
             </S.Footer>
             <S.Policy>
                 <span>© 2019 GSM. All Rights Reserved.</span>
