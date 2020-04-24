@@ -11,6 +11,7 @@ import IilustNotebook from './IiustNotebook';
 import IilustBeta from './IilustBeta';
 import Logout from './Logout';
 import User from './User';
+import More from './More';
 
 export {
     Home,
@@ -25,5 +26,6 @@ export {
     IilustNotebook,
     IilustBeta,
     Logout,
-    User
+    User,
+    More
 }

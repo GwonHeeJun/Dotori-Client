@@ -4,7 +4,7 @@ import BannerContainer from '../BannerContainer/BannerContainer';
 import { MatchType } from '../../Utils/GlobalType';
 import { ManufactureDate } from '../../Utils/ManufactureDate';
 import { PageTemplate } from '..';
-import { UserProfile } from '../../Components';
+import { UserProfile, Board } from '../../Components';
 
 interface HomeProps {
     match: MatchType
@@ -16,18 +16,15 @@ const testProfile = {
     class: '3'
 };
 
+
+
 const HomeContainer: React.FC<HomeProps> = ({ match }) => {
     return (
         <PageTemplate match={match}>
             <S.UserProfile>
                 <UserProfile logoutFunc={() => console.log("logout")} userProfile={testProfile} />
             </S.UserProfile>
-            <S.BoardWrapper>
-                <div />
-                <div />
-                <div />
-                <div />
-            </S.BoardWrapper>
+            <Board  />
         </PageTemplate>
     )
 }

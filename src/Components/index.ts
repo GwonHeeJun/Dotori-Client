@@ -7,6 +7,9 @@ import UserProfile from './UserProfile/UserProfile';
 import EventList from './EventList/EventList';
 import LaptopEvent from './EventItem/LaptopEvent/LaptopEvent';
 import SongEvent from './EventItem/SongEvent/SongEvent';
+import Board from './Board/Board';
+import BoardList from './BoardList/BoardList';
+import BoardItem from './BoardItem/BoardItem';
 
 export {
     Sidebar,
@@ -17,5 +20,8 @@ export {
     UserProfile,
     EventList,
     LaptopEvent,
-    SongEvent
+    SongEvent,
+    Board,
+    BoardList,
+    BoardItem
 }; 
