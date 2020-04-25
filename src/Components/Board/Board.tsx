@@ -1,47 +1,22 @@
 import React from 'react';
 import * as S from './Style';
-import { PostType } from '../../Utils/GlobalType';
+import { BoardObj } from '../../Utils/GlobalType';
 import { BoardList } from '..';
 
-type BoardObj = [
-    {
-        notice: {
-            title: "기숙사 공지사항"
-            list: PostType[]
-        }
-    },
-    {
-        song: {
-            title: "기숙사 공지사항"
-            list: PostType[]
-        }
-    },
-    {
-        forest: {
-            title: "기숙사 공지사항"
-            list: PostType[]
-        }
-    }
-]
-
 interface BoardProps {
-    // boardPostList: BoardObj[]
-    boardPostList?: any
+    boardPostList: BoardObj[]
 }
 
-// const mappingBoardList = (list?: any) => list.map((item, ix) => {
-//     return <BoardList lists={item} key={ix}/>
-// })
+const mappingBoardList = (boardPostList : BoardObj[]) => boardPostList.map(item => returnBoardListComponent(item))
+
+
+const returnBoardListComponent = (board : BoardObj) => <BoardList board={board} />;
 
 const Board: React.FC<BoardProps> = ({ boardPostList }) => {
+   
     return (
         <S.Postioner>
-            {/* {mappingBoardList(boardPostList)}
-             */}
-            <BoardList />
-            <BoardList />
-            <BoardList />
-            <BoardList />
+            {mappingBoardList(boardPostList)}
         </S.Postioner>
     )
 }

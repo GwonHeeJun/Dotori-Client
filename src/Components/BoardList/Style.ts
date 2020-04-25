@@ -10,7 +10,7 @@ export const Postioner = styled.div`
 `
 
 export const ListHeader = styled.div`
-    flex: 1;
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -42,9 +42,8 @@ export const ListHeader = styled.div`
 export const ListContent = styled.div`
     flex: 3;
     display: flex;
-    padding: 30px 30px 27px;
-    display: grid;
-    grid-template-rows: repeat(2, 50px);
-    row-gap: 15px;
-
+    flex-direction: column;
+    padding: 0px 30px 30px;
+    align-items: center;
+    justify-content: center;
 `

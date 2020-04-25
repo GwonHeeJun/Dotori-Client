@@ -9,6 +9,7 @@ export const Postioner = styled.div<StyleProps>`
     height: 90%;
     border-radius: 20px;
     box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.16);
+    cursor: pointer;
     display: flex;
     z-index:1;
     position: relative;

@@ -12,6 +12,7 @@ export const Postioner = styled.div<StyleProps>`
     height: 90%;
     border-radius: 20px;
     box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.16);
+    cursor: pointer;
     display: flex;
     ${props => props.laptopObj ? 
     `background-image: linear-gradient(63deg, #217ece 21%, #9242dd 76%);

@@ -13,7 +13,7 @@ const NotebookBanner: React.FC = () => {
                 <span>{ManufactureDate('M')}월 {ManufactureDate('D')}일 {ManufactureDate('W')}요일</span>
                 {isRent ?
                     <S.RentWrapper>
-                        <h2>Lab 1실, 2번 좌석에 노트북 대여를 신청했어요.</h2>
+                        <h2>LAB 1실, 2번 좌석에 노트북 대여를 신청했어요.</h2>
                         <span onClick={() => setIsRent(!isRent)}>취소</span>
                     </S.RentWrapper>
                     :
