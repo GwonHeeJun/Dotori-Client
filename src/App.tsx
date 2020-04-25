@@ -1,12 +1,20 @@
 import React from 'react';
-import { GlobalStyle } from './Style/GlobalStyle';
+import { GlobalStyle, Positioner, ContentWrapper } from './Style/GlobalStyle';
+import Router from './Router';
+import { BrowserRouter } from 'react-router-dom';
+import { SidebarContainer } from './Container';
 
-const App: React.FC = () => {
+const App: React.FC = ( ) => {
   return (
-    <React.Fragment>
+    <BrowserRouter>
       <GlobalStyle />
-      <div>☃️ 폰트 적용확인</div>
-    </React.Fragment>
+      <Positioner>
+        <SidebarContainer />
+        <ContentWrapper>
+          <Router />
+        </ContentWrapper>
+      </Positioner>
+    </BrowserRouter>
   )
 }
 
