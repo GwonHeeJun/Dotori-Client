@@ -22,7 +22,7 @@ const returnPostTypeCircleColor = (postType: string) => {
 
 const BoardItem: React.FC<BoardItemProps> = ({ list, type }) => {
     return (
-        <S.Postioner onClick={() => alert("리스트 클릭")}>
+        <S.Postioner onClick={() => alert("리스트 클릭")} data-test="test-postList">
             <S.ActiveDivision>
                 <S.ActiveCircle circleColor={returnPostTypeCircleColor(type)} />
             </S.ActiveDivision>
