@@ -27,7 +27,7 @@ const BoardList: React.FC<BoardListProps> = ({ board }) => {
         <S.Postioner>
             <S.ListHeader>
                 <h2>{board.title}</h2>
-                <div onClick={() => alert("더보기 클릭")}>
+                <div onClick={() => alert("더보기 클릭")} data-test="test-more">
                     <span>더보기</span>
                     <More />
                 </div>

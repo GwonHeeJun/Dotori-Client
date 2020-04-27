@@ -12,7 +12,7 @@ interface LaptopProps {
 
 const LaptopEvent: React.FC<LaptopProps> = ({ laptop, onClickFunc }) => {
     return (
-        <S.Postioner laptopObj={laptop} onClick={() => onClickFunc()}>
+        <S.Postioner laptopObj={laptop} onClick={() => onClickFunc()} data-test="test-laptopEvent">
             <S.ContentWrapper>
                 <S.Header>
                     <span>{ManufactureDate('M')} / {ManufactureDate('D')} 노트북 대여</span>
