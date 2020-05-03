@@ -1,22 +1,22 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
-interface StyleProps {
-    active: boolean
-}
+// interface StyleProps {
+//     color: boolean
+// }
 
-export const LinkWrapper = styled(Link)<StyleProps>`
+export const LinkWrapper = styled(Link)`
     text-decoration: none;
     display: flex;
     width: 100%;
     align-items: center;
-    color: ${props => props.active ? '#0F4C81' : '#BBBBBE'};
+    ${props => props.replace ? 'color: #0F4C81' : 'color: #BBBBBE'};
     margin-bottom: 18%;
 
     svg {
         width: 25px;
         height: 23.64px;
-        fill: ${props => props.active ? '#0F4C81' : '#BBBBBE'};
+        ${props => props.replace ? 'fill: #0F4C81' : 'fill: #BBBBBE'};
     }
 `
 
