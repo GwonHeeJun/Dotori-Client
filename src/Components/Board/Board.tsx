@@ -7,10 +7,7 @@ interface BoardProps {
     boardPostList: BoardObj[]
 }
 
-const mappingBoardList = (boardPostList : BoardObj[]) => boardPostList.map((item, ix) => returnBoardListComponent(item, ix))
-
-
-const returnBoardListComponent = (board : BoardObj, ix : number) => <BoardList board={board} key={`board-list-${ix}`}/>;
+const mappingBoardList = (boardPostList : BoardObj[]) => boardPostList.map((item, ix) => <BoardList board={item} key={`${item.id}-list-${ix}`} />)
 
 const Board: React.FC<BoardProps> = ({ boardPostList }) => {
    
