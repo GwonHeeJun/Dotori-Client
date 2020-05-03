@@ -31,7 +31,7 @@ const UserProfile: React.FC<ProfileProps> = ({ logoutFunc, userProfile }) => {
     return (
         <S.Postioner>
             <S.Header>
-                <S.LogoutWrapper onClick={logoutFunc}>
+                <S.LogoutWrapper onClick={logoutFunc} data-test="test-logout">
                     <Logout />
                     <span>로그아웃</span>
                 </S.LogoutWrapper>

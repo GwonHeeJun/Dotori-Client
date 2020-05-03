@@ -14,7 +14,7 @@ interface SongProps {
 
 const SongEvent: React.FC<SongProps> = ({ song, onClickFunc }) => {
     return (
-        <S.Postioner thumbnailKey={song.thumbnailKey} onClick={() => onClickFunc()}>
+        <S.Postioner thumbnailKey={song.thumbnailKey} onClick={() => onClickFunc()} data-test="test-songEvent">
             <S.ContentWrapper>
                 <S.Header>
                     <span>{ManufactureDate('M')} / {ManufactureDate('D')} 기상음악 신청</span>
