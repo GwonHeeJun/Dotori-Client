@@ -5,8 +5,10 @@
 
 - React (hooks)
 - Typescript
-- Redux
-- ReduxSaga
+- ContextApi
+
+> 기존 Redux와 ReduxSaga로 구현예정이였지만, 
+기술적으로 ContextApi가 효율적인거 같아 Redux와 Saga를 변경하기로 했습니다.
 
 > 공식적인 지원은 웹을 기준으로 지원할 예정이며, 
 
