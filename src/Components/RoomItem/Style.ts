@@ -10,10 +10,15 @@ export const Postioner = styled.div`
   width: 340px;
   min-height: 150px;
   border-radius: 15px;
-  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.16);
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.16);
+  transition: all 0.15s ease-in;
   background-color: #ffffff;
   cursor: pointer;
   margin-bottom: 5.8%;
+
+  &:hover {
+    box-shadow: 0 1px 15px 0 rgba(0, 0, 0, 0.16);
+  }
 `
 
 export const LeftDivision = styled.div<StyleProps>`

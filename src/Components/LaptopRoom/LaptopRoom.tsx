@@ -9,19 +9,20 @@ type roomObj = {
 }
 
 interface LaptopProps {
-    roomData: roomObj[]
+    roomData: roomObj[];
+    onPressRoom: (value: string) => void;
 }
 
-const mappingBoardList = (roomList: roomObj[]) => roomList.map((item, ix) => returnBoardListComponent(item, ix))
+const mappingBoardList = (roomList: roomObj[], onPressRoom: (value : string) => void) => roomList.map((item, ix) => returnBoardListComponent(item, ix, onPressRoom))
 
-const returnBoardListComponent = (roomDetail: roomObj, ix: number) => <RoomItem room={roomDetail} roomNowIx={ix} key={`room-list-${ix}`} />;
+const returnBoardListComponent = (roomDetail: roomObj, ix: number, onPressRoom: (value : string) => void) => <RoomItem room={roomDetail} roomNowIx={ix} key={`room-list-${ix}`} onPressRoom={(value : string) => onPressRoom(value)} />;
 
-const LaptopRoom: React.FC<LaptopProps> = ({ roomData }) => {
+const LaptopRoom: React.FC<LaptopProps> = ({ roomData, onPressRoom }) => {
     return (
         <S.Postioner>
             <label>학습실 선택</label>
             <S.ScrollWrapper>
-                {mappingBoardList(roomData)}
+                {mappingBoardList(roomData, onPressRoom)}
             </S.ScrollWrapper>
         </S.Postioner>
     )

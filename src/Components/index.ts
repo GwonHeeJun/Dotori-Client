@@ -12,6 +12,8 @@ import BoardList from './BoardList/BoardList';
 import BoardItem from './BoardItem/BoardItem';
 import LaptopRoom from './LaptopRoom/LaptopRoom';
 import RoomItem from './RoomItem/RoomItem';
+import LaptopSeats from './LaptopSeats/LaptopSeats';
+import LaptopSeat from './LaptopSeat/LaptopSeat';
 
 export {
     Sidebar,
@@ -27,5 +29,7 @@ export {
     BoardList,
     BoardItem,
     LaptopRoom,
-    RoomItem
+    RoomItem,
+    LaptopSeats,
+    LaptopSeat
 }; 

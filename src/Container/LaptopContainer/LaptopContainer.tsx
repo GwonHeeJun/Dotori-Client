@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { PageTemplate } from '..'
-import { LaptopRoom } from '../../Components'
-import * as S from './Style';
+import { LaptopRoom, LaptopSeats } from '../../Components'
 import { MatchType } from '../../Utils/GlobalType';
+import * as S from './Style';
 
 const roomDummyData = [
     {
@@ -38,12 +38,12 @@ interface LaptopProps {
 }
 
 const LaptopContainer: React.FC<LaptopProps> = ({ match }) => {
+    const [roomName, setRoomName] = useState('');
+
     return (
         <PageTemplate match={match}>
-            <LaptopRoom roomData={roomDummyData} />
-            {/* <S.LaptopSeat>
-                /
-            </S.LaptopSeat> */}
+            <LaptopRoom roomData={roomDummyData} onPressRoom={(value) => setRoomName(value)}  />
+            {roomName && <LaptopSeats roomId={roomName} /> || <S.Postioner>노트북 대여실을 선택해주세요.</S.Postioner>}
         </PageTemplate>
     )
 }

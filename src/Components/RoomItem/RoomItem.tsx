@@ -10,6 +10,7 @@ type roomObj = {
 interface RoomItemProps {
     room: roomObj,
     roomNowIx: number,
+    onPressRoom: (value : string) => void;
 }
 
 const dummyRoom = ["자", "1", "2", "3", "4"]
@@ -45,9 +46,9 @@ const mappingSimpleRoom = (nowIndex: number, compareMax: number, compareMin: num
         </S.SimpleRoom>)
 
 
-const RoomItem: React.FC<RoomItemProps> = ({ room, roomNowIx }) => {
+const RoomItem: React.FC<RoomItemProps> = ({ room, roomNowIx, onPressRoom }) => {
     return (
-        <S.Postioner>
+        <S.Postioner onClick={() => onPressRoom(room.roomName)}>
             <S.LeftDivision statusColor={returnRoomStatusNumber(room.maxSeat, room.minSeat)}>
                 <header>
                     <div className="circle" />
