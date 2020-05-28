@@ -1,6 +1,7 @@
 import React from 'react';
 import { RoomItem } from '..'
 import * as S from './Style';
+import { ChangeLaptopType } from '../../Components';
 
 type roomObj = {
     roomName: string,

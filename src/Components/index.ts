@@ -14,6 +14,7 @@ import LaptopRoom from './LaptopRoom/LaptopRoom';
 import RoomItem from './RoomItem/RoomItem';
 import LaptopSeats from './LaptopSeats/LaptopSeats';
 import LaptopSeat from './LaptopSeat/LaptopSeat';
+import ChangeLaptopType from './ChangeLaptopType/ChangeLaptopType';
 
 export {
     Sidebar,
@@ -31,5 +32,6 @@ export {
     LaptopRoom,
     RoomItem,
     LaptopSeats,
-    LaptopSeat
+    LaptopSeat,
+    ChangeLaptopType
 }; 
