@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import * as S from "./Style";
 import { ManufactureDate } from "../../Utils/ManufactureDate";
+import { LaptopTable } from "../../Components";
+import { MatchType } from "../../Utils/GlobalType";
 
 const btnData = [
   {
@@ -17,7 +19,11 @@ const btnData = [
   },
 ];
 
-const AdminLaptopListContainer: React.FC = () => {
+interface AdminLaptopListProps {
+  match: MatchType;
+}
+
+const AdminLaptopListContainer: React.FC<AdminLaptopListProps> = ({ match }) => {
   const [selectId, setSelectId] = useState(0);
   return (
     <S.Postioner>
@@ -47,6 +53,7 @@ const AdminLaptopListContainer: React.FC = () => {
             <span>0개 선택됨</span>
         </div>
       </S.Header>
+      <LaptopTable match={match} />
     </S.Postioner>
   );
 };

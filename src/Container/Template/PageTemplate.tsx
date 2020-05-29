@@ -47,7 +47,7 @@ const PageTemplate: React.FC<TemplateProps> = ({ match, children }) => {
             </S.Banner>
             <S.Content>{children}</S.Content>
           </> 
-        ) : <AdminLaptopListContainer />}
+        ) : <AdminLaptopListContainer match={match}  />}
       </S.Wrapper>
     </S.Postioner>
   );

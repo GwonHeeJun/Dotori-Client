@@ -59,6 +59,7 @@ export const SelectUser = styled.div<StyledProps>`
     color: ${props => props.isActive ? "#fff" : "#0f4c81"};;
     border: ${props => props.isActive ? "none" : "1px solid #0f4c81"};;
     margin-right: 5px;
+    cursor: pointer;
 
     span {
         font-size: 16px !important;
@@ -67,4 +68,35 @@ export const SelectUser = styled.div<StyledProps>`
     small {
         margin-left: 2.5px;
     }   
+`
+
+export const TableHeader = styled.div`
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+
+    div { 
+        display: flex;
+        flex: 1;
+        border: 1px solid black;
+    }
+`
+
+export const Content = styled.div`
+    width: 100%;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    
+    height: 100%;
+    align-items: center;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    div {
+        width: 100%;
+        min-height: 75px;
+        border: 1px solid black;
+    }
 `
