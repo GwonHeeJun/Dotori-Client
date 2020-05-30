@@ -10,6 +10,12 @@ import SongEvent from './EventItem/SongEvent/SongEvent';
 import Board from './Board/Board';
 import BoardList from './BoardList/BoardList';
 import BoardItem from './BoardItem/BoardItem';
+import LaptopRoom from './LaptopRoom/LaptopRoom';
+import RoomItem from './RoomItem/RoomItem';
+import LaptopSeats from './LaptopSeats/LaptopSeats';
+import LaptopSeat from './LaptopSeat/LaptopSeat';
+import ChangeLaptopType from './ChangeLaptopType/ChangeLaptopType';
+import LaptopTable from './LaptopTable/LaptopTable'
 
 export {
     Sidebar,
@@ -23,5 +29,11 @@ export {
     SongEvent,
     Board,
     BoardList,
-    BoardItem
+    BoardItem,
+    LaptopRoom,
+    RoomItem,
+    LaptopSeats,
+    LaptopSeat,
+    ChangeLaptopType,
+    LaptopTable
 }; 
