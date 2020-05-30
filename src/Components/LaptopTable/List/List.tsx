@@ -28,10 +28,18 @@ const onlyCompareThisHeader = (match: MatchType) => {
   }
 };
 
+const ProhibitLaptopDetected = (user_id : string, status: boolean) => {
+  if (status) {
+    alert(`${user_id} : 적발 완료.`);
+  } else {
+    alert('이미 적발된 학생입니다.');
+  }
+}
+
 
 const mappingUserList = (userObj: User[], match: MatchType) =>
     userObj.map((item, ix) => 
-    <S.Wrapper>
+    <S.Wrapper key={`${ix}`}>
                 <div style={{ flex: onlyCompareThisHeader(match).list[0].flex }}>{item.name}</div>
                 <div style={{ flex: onlyCompareThisHeader(match).list[1].flex  }}>{item.grade}</div>
                 <div style={{ flex: onlyCompareThisHeader(match).list[2].flex  }}>{item.class}</div>
@@ -44,7 +52,11 @@ const mappingUserList = (userObj: User[], match: MatchType) =>
                     </S.StatusWrapper>
                 </div>
                 <div style={{ flex: onlyCompareThisHeader(match).list[7].flex  }}>{item.bringTime}</div>
-                <div style={{ flex: onlyCompareThisHeader(match).list[8].flex  }}>OK</div>
+                <div style={{ flex: onlyCompareThisHeader(match).list[8].flex  }}>
+                  <S.DetectedLaptop status={item.status} onClick={() => ProhibitLaptopDetected(item.name, item.status)}>
+                      <span>{item.status ? '적발신고' : '적발' }</span>
+                  </S.DetectedLaptop>
+                </div>
     </S.Wrapper>)
 
 

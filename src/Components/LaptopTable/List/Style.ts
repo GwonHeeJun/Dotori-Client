@@ -32,6 +32,19 @@ export const StatusWrapper = styled.p<{ status : boolean }>`
         font-size: 16px;
         color: ${props => props.status ? '#28c842' : '#e11a1a'};
     }
-
-
 ` 
+
+export const DetectedLaptop = styled.p<{ status : boolean }>`
+    padding: 12px 12px;
+    border-radius: 10px;
+    background-color: ${props => props.status ? '#fcecec' : '#a0a0a04f'};
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    
+    span {
+        font-size: 16px;
+        color: ${props => props.status ? '#e11a1a' : '#000'};
+    }
+`
