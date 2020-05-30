@@ -13,7 +13,7 @@ interface SidebarItemProps {
 
 const SidebarItem: React.FC<SidebarItemProps> = ({ router, menuIcon, menuTitle, currentRouter, setCurrnentRouter }) => {
     return (
-        <S.LinkWrapper to={router} onClick={() => setCurrnentRouter(router)} active={currentRouter == router}>
+        <S.LinkWrapper to={router} onClick={() => setCurrnentRouter(router)} replace={currentRouter === router}>
             {useRouterNameChangeMenuImage(menuIcon)}
             <S.MenuTitle>{menuTitle}</S.MenuTitle>
         </S.LinkWrapper>
