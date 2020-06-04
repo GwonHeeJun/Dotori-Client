@@ -5,19 +5,8 @@ import { BrowserRouter } from "react-router-dom";
 import { SidebarContainer } from "./Container";
 import { PopupConsumer, PopupProvider } from "./Utils/Context/PopupContext";
 import { Popup } from "./Components";
+import { PopupInfo } from "./Utils/Models/PopupInfo";
 
-interface PopupInfo {
-  id?: number;
-  title: string;
-  message?: string;
-  element?: JSX.Element;
-  confirmLabel?: string;
-  confirmAction?: () => void;
-  closeLabel?: string;
-  closeAction?: () => void;
-  showOnlyBody?: boolean;
-  withoutClose?: boolean;
-}
 
 const App: React.FC = () => {
   function _renderPopups() {

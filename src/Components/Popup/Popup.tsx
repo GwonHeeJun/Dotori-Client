@@ -1,23 +1,10 @@
 import React, { useRef, useEffect, useCallback } from "react";
 import * as S from "./Style";
 import { usePopupContext } from "../../Utils/Context/PopupContext";
+import { PopupInfo } from '../../Utils/Models/PopupInfo'; 
 
 interface PopupChildrenProps {
   popupId?: number;
-}
-
-interface PopupInfo {
-  id?: number;
-  title: string;
-  message?: string;
-  element?: JSX.Element;
-  confirmLabel?: string;
-  confirmAction?: () => void;
-  closeLabel?: string;
-  closeAction?: () => void;
-  showOnlyBody?: boolean;
-  withoutClose?: boolean;
-
 }
 
 interface PopupProps {

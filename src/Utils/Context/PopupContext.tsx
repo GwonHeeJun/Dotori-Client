@@ -5,19 +5,7 @@ import React, {
   Dispatch,
   SetStateAction,
 } from "react";
-
-interface PopupInfo {
-  id?: number;
-  title: string;
-  message?: string;
-  element?: JSX.Element;
-  confirmLabel?: string;
-  confirmAction?: () => void;
-  closeLabel?: string;
-  closeAction?: () => void;
-  showOnlyBody?: boolean;
-  withoutClose?: boolean;
-}
+import { PopupInfo } from '../Models/PopupInfo'; 
 
 interface PopupState {
   popupList?: PopupInfo[];
