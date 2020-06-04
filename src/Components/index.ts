@@ -16,6 +16,7 @@ import LaptopSeats from './LaptopSeats/LaptopSeats';
 import LaptopSeat from './LaptopSeat/LaptopSeat';
 import ChangeLaptopType from './ChangeLaptopType/ChangeLaptopType';
 import LaptopTable from './LaptopTable/LaptopTable'
+import Popup from './Popup/Popup';
 
 export {
     Sidebar,
@@ -35,5 +36,6 @@ export {
     LaptopSeats,
     LaptopSeat,
     ChangeLaptopType,
-    LaptopTable
+    LaptopTable,
+    Popup
 }; 
