@@ -36,7 +36,7 @@ const LaptopSeats: React.FC<LaptopSeatsProps> = ({ roomId }) => {
       </S.Header>
       <S.GridWrapper>
         <S.GridContent>
-           {[{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {},].map((item, ix) => <LaptopSeat id={ix} />)}
+           {[{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {},].map((item, ix) => <LaptopSeat id={ix} roomName={roomId} />)}
         </S.GridContent>
       </S.GridWrapper>
     </S.Postioner>
