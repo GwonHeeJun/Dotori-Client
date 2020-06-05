@@ -10,7 +10,7 @@ const NotebookBanner: React.FC = () => {
     const [isRent, setIsRent] = useState(true)
 
     const onCancelLaptopBring = useCallback(() => {
-        addPopup({ title : "노트북 대여 취소", message: "Lab 1실, 2번 좌석에 신청된 노트북 대여를 취소할까요?", confirmLabel: "대여취소", confirmAction: () => setIsRent(false), withoutClose: true})
+        addPopup({ title : "노트북 대여 취소", element: <><strong>Lab 1실, 2번 좌석</strong>에 신청된 노트북 대여를 취소할까요?</>, confirmLabel: "대여취소", confirmAction: () => setIsRent(false), withoutClose: true})
     }, [])
 
     return (
