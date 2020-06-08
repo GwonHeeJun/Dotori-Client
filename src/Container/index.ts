@@ -4,6 +4,7 @@ import BannerContainer from './BannerContainer/BannerContainer';
 import PageTemplate from './Template/PageTemplate';
 import LaptopContainer from './LaptopContainer/LaptopContainer';
 import AdminLaptopListContainer from './AdminLaptopListContainer/AdminLaptopListContainer';
+import NotResponsiveContainer from './NotResponsiveContainer/NotResponsiveContainer';
 
 export { 
     SidebarContainer,
@@ -11,5 +12,6 @@ export {
     BannerContainer,
     PageTemplate,
     LaptopContainer,
-    AdminLaptopListContainer
+    AdminLaptopListContainer,
+    NotResponsiveContainer
 };
